@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<title>Liste</title>
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<meta name="description" content="To do list pour organiser les tâches de la vie quotidienne">
+	<meta name="keywords" content="liste, Firebase ">
+	<meta name="author" content="Jean-Michel LUY">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/loader.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+
+	<script src="assets/js/jquery-min.js"></script>
+	<script src="assets/js/popper-min.js"></script>
+	<script src="assets/js/bootstrap-min.js"></script>
+	<script src="https://kit.fontawesome.com/8ad0e680c8.js" crossorigin="anonymous"></script>
+	
+	<!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+	<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-auth.js"></script>
+
+	<script src="assets/js/config.js"></script>
+	<script src="assets/js/index.js"></script>
+	<script src="assets/js/signOut.js"></script>
+	
+</head>
+<body>
+		<div id="loader">
+				<div class='body'>
+					  <span>
+					    <span></span>
+					    <span></span>
+					    <span></span>
+					    <span></span>
+					  </span>
+					 <div class='base'>
+					    <span></span>
+					    <div class='face'></div>
+					  </div>
+					</div>
+					<div class='longfazers'>
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					</div>
+						<h1>Partit chercher la liste !</h1>
+				</div>
+		</div>
+	<nav class="navbar navbar-expand-lg navbar-light shadow">
+		  <a class="navbar-brand" href="#">T.D.L</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		    <ul class="navbar-nav ml-auto">
+		      <li class="nav-item">
+		        <a class="nav-link" href="./index.html">Création de compte</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link" href=".app.html">Liste</a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link menuHide" href="./signin.html">Connexion<span class="sr-only"></span></a>
+		      </li>
+		      <li class="nav-item">
+		        <a class="nav-link text-danger" href="#" id="signOut">Déconnexion</a>
+		      </li>
+		      
+		    </ul>
+		  </div>
+	</nav>
+
+	<main>
+	<div class="container">
+		<h1 class="title display-4 mt-4 text-center"><span class="text-warning">To-Do</span> List</h1>
+
+			<div class="picture">
+
+					<img class="rounded-circle rounded mx-auto d-block" src="assets/img/user-2935373_640.png" alt="picture">
+			</div>
+
+			<form>
+			 	<div class="form-group">
+					<label for="email">Email</label>
+					<input type="email" name="email" id="email" class="form-control" placeholder="yourmail@mail.fr">
+				</div>
+				
+				<div class="form-group">
+					<label for="password">Mot de passe</label>
+						<input type="password" name="password" id="password" class="form-control" minlength="6" required>
+						<small class="form-text text-muted">6 caractères au minimum</small>
+					
+				</div>
+				<div class="form-group">
+					<label for="password2">Confirmer votre mot de passe</label>
+						<input type="password" name="password2" id="password2" class="form-control" placeholder="confirmer votre mot de passe">
+				</div>
+
+				<div class="text-center">
+					<button type="button"  id="create">Créer un compte</button>
+				</div>
+			</form>
+			
+			<div class="text-center mt-2 ">
+			<!-- <p id="signOut"><span class=" shadow font-weight-bold text-danger">Déconnexion</span></p> -->
+			
+				<a href="signIn.html">Pour se connecter c'est par ICI!</a>
+			</div>
+
+		</div>
+	</main>
+</body>
+</html>
